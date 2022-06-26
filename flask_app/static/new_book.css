@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #CA9E84;
+}
+
+.btn.btn-secondary.btn-sm{
+    background-color: #CA9E84;
+    border-color: #CA9E84;
+}
+
+h2{
+    color:#CA9E84;
+}
+
+.btn.btn-primary{
+    background-color: #CB9776;
+    border-color: #CB9776;
+}
+
+.btn.btn.btn-primary:hover{
+    background-color: #BC8C6F;
+    border-color:#BC8C6F;
+}
+
+.alert.alert-danger{
+    background-color: #CA9E84;
+    border-color: #CA9E84;
+    color: white;
+}

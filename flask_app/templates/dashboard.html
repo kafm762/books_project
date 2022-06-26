@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard_style.css') }}">
+</head>
+
+<body>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="navbar navbar-dark shadow-lg" id="section">
+                <div class="container">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                            class="bi bi-bookmark-heart" viewBox="2 0 16 16" class="me-2">
+                            <path fill-rule="evenodd"
+                                d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        </svg>
+                        <strong class="fs-4">Books To Read</strong>
+                    </a>
+                    <a href="/logout" class="btn btn-primary btn-sm">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light"><strong>Books To Read</strong></h1>
+                        <p class="lead text-light"><strong>Something for anyone looking for a new book to read or anyone wanting
+                            to share a good book they read- or both.</strong></p>
+                        <a href="/new/book" class="btn btn-primary my-2">Add a book</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <div class="d-flex flex-wrap album py-5 bg-light">
+                <div class=" container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    {% for book in books %}
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                        fill="#eceeef" dy=".3em">Image</text>
+                                </svg>-->
+                                <div class="card-body">
+                                    <p class="card-text">Title: {{book.title}}</p>
+                                    <p class="card-text">Author: {{book.author}}</p>
+                                    <p class="card-text">Genre: {{book.genre}}</p>
+                                    <p class="card-text">Description: {{book.description}}</p>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="/book/{{book.id}}" class="btn btn-sm btn-outline-secondary">View</a>
+                                            {% if book.user_id == session.user_id%}
+                                            <a href="/edit/book/{{book.id}}" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                            <a href="/destroy/book/{{book.id}}" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                            {% endif %}
+                                        </div>
+                                        <small class="text-muted"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <p class="float-end mb-1">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="mb-1">For book lovers, made by a book lover.</p>
+                <p class="mb-0"></p>
+            </div>
+        </footer>
+
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>

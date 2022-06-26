@@ -1,0 +1,39 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+}
+.btn.btn-primary.btn-sm{
+    background-color: #CA9E84;
+    border-color: #CA9E84;
+}
+
+.btn-primary{
+    background-color: #CA9E84;
+    border-color: #CA9E84;
+}
+.btn-primary:hover{
+    background-color: #9E7C68;
+    border-color: #9E7C68;
+}
+.navbar{
+    background-color: #CA9E84;
+}
+
+.card.shadow-sm{
+    display: inline-block;
+}
+
+.py-5.text-center.container{
+    margin-top: 10px;
+    background-image: url('imgs/books.jpg');
+    color: white;
+}
