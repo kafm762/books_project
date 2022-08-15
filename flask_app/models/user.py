@@ -32,9 +32,7 @@ class User:
     def get_by_email(cls,data):
         query = "SELECT * FROM users WHERE email = %(email)s;"
         results = connectToMySQL(cls.db_name).query_db(query,data)
-        if len(results) < 1:
-            return False
-        return cls(results[0])
+        return results
 
     @classmethod
     def get_by_id(cls,data):

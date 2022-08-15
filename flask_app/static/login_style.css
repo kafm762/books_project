@@ -4,13 +4,18 @@
 }
 
 body{
-    background-color: #F9F0EB;
+    background-color: #F8F7F9;
 }
 
 .everything{
-    margin-top: 10px;
-    background-image: url('imgs/books.jpg');
-    height: 700px;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-image: url("imgs/handofbooks.jpg");
+    background-repeat: no-repeat;
+    background-size: 780px;
+    width: 2200px;
+    height: 750px;
+
 }
 
 form{
@@ -18,26 +23,30 @@ form{
 }
 
 h1{
-    color:#CB9776;
+    color:#A37B73;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
 }
 
 .btn.btn-primary{
-    background-color: #CB9776;
-    border-color: #CB9776;
+    background-color: #A37B73;
+    border-color: #A37B73;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #BC8C6F;
-    border-color:#BC8C6F;
+    background-color: #D0B8AC;
+    border-color:#D0B8AC;
 }
 
 .btn.btn-link{
-    color: black;
+    color:#BAA898;
     text-decoration: none;
 }
 
 .btn.btn-link:hover{
     text-decoration: underline;
+    color: #B86F52;
 }
 
 strong{
@@ -49,7 +58,13 @@ strong{
 }
 
 .alert.alert-primary{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
-    color: white;
+    background-color: #EFE5DC;
+    border-color: #EFE5DC;
+    color: #B86F52;
+}
+
+.bi.bi-bookmark-heart{
+    color:#A37B73;
+    margin-left: 190px;
+    margin-bottom: 10px;
 }

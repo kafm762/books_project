@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="navbar navbar-dark" id="section">
             <div class="container">
             <a href="#" class="navbar-brand d-flex align-items-center">
@@ -22,7 +22,7 @@
             </a>
             </div>
         </div>
-        </header>
+        </header> -->
 
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <nav class=" d-flex justify-content-end align-items-center col-12">
@@ -32,8 +32,12 @@
     </nav>
     <div class="everything">
     <div class="d-flex justify-content-around">
-        <form action="/register" method="post" class="col-4 bg-light text-dark my-4">
-            <h1>Register</h1>
+        <form action="/register" method="post" class="form-signin col-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bookmark-heart" viewBox="2 0 16 16" class="me-2">
+                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+            </svg>
+            <h1>Register Here</h1>
                 {% with messages = get_flashed_messages(category_filter=['register']) %}
                     {% if messages %}
                     <div class="alert alert-primary" role="alert">
@@ -44,29 +48,29 @@
                     {% endif %}
                 {% endwith %}
             <br>
-            <div class="form-group">
-                <label for="first_name">First Name:</label>
-                <input type="text" name="first_name" class="form-control">
+            <div class="form-floating">
+                <input type="text" name="first_name" class="form-control" id="floatingInput" placeholder="first_name">
+                <label for="floatingInput">First Name</label>
             </div>
             <br>
-            <div class="form-group">
-                <label for="last_name">Last Name:</label>
-                <input type="text" name="last_name" class="form-control">
+            <div class="form-floating">
+                <input type="text" name="last_name" class="form-control" id="floatingInput" placeholder="last_name">
+                <label for="floatingInput">Last Name:</label>
             </div>
             <br>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="text" name="email" class="form-control">
+            <div class="form-floating">
+                <input type="text" name="email" class="form-control" id="floatingInput" placeholder="email">
+                <label for="floatingInput">Email:</label>
             </div>
             <br>
-            <div class="form-group">
+            <div class="form-floating">
+                <input type="password" name="password" class="form-control" id="floatingInput" placeholder="password">
                 <label for="password">Password:</label>
-                <input type="password" name="password" class="form-control">
             </div>
             <br>
-            <div class="form-group">
+            <div class="form-floating">
+                <input type="password" name="confirm" class="form-control" id="floatingInput" placeholder="password">
                 <label for="confirm">Confirm Password:</label>
-                <input type="password" name="confirm" class="form-control">
             </div>
             <br>
             <br>
@@ -75,8 +79,10 @@
             <br>
             <br>
         </form> 
-    </div>  
-    </div>       
 
+    </div>       
+<div class="">
+        <h1> About </h1>
+    </div>
 </body>
 </html>
