@@ -6,47 +6,45 @@
 body{
     background-color: #F8F7F9;
 }
+.image{
+    float: left;
+    margin-left: 40px;
+}
 
 .everything{
-    margin-top: 15px;
-    margin-left: 5px;
-    background-image: url("imgs/handofbooks.jpg");
-    background-repeat: no-repeat;
-    background-size: 780px;
-    width: 2200px;
-    height: 750px;
+    margin-top: 25px;
 
 }
+ form{
+    margin-top: 60px;
+ }
 
-form{
-    padding: 60px;
-}
 
 h1{
-    color:#A37B73;
+    color:#BAA898;
     font-weight: 500;
     font-size: 60px;
     text-align: center;
 }
 
 .btn.btn-primary{
-    background-color: #A37B73;
-    border-color: #A37B73;
+    background-color: #D0B8AC;
+    border-color: #D0B8AC;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #D0B8AC;
-    border-color:#D0B8AC;
+    background-color: #A37B73;
+    border-color:#A37B73;
 }
 
 .btn.btn-link{
-    color:#BAA898;
+    color: #839788;
     text-decoration: none;
 }
 
 .btn.btn-link:hover{
     text-decoration: underline;
-    color: #B86F52;
+    color: #15541B;
 }
 
 strong{
@@ -65,6 +63,6 @@ strong{
 
 .bi.bi-bookmark-heart{
     color:#A37B73;
-    margin-left: 190px;
+    margin-left: 180px;
     margin-bottom: 10px;
 }

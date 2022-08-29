@@ -2,61 +2,61 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 body{
     background-color: #F8F7F9;
 }
-
+.image{
+    float: left;
+    margin-left: 40px;
+}
 form{
-    padding: 30px;
+    margin-left: 50px;
 }
 
 .bi.bi-bookmark-heart{
     color:#A37B73;
-    margin-left: 190px;
+    margin-left: 140px;
     margin-bottom: 10px;
 }
 
 h1{
-    color:#A37B73;
+    color: #BAA898;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
 
 .btn.btn-primary{
-    background-color: #A37B73;
-    border-color: #A37B73;
+    background-color: #BAA898;
+    border-color: #BAA898 ;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #D0B8AC;
-    border-color:#D0B8AC;
+    background-color: #A37B73;
+    border-color:#A37B73;
 }
 
 .btn.btn-link{
-    color: #BAA898;
+    color: #839788;
     text-decoration: none;
+    transition: .5s ease-in;
 }
 
 .btn.btn-link:hover{
     text-decoration: underline;
-    color: #B86F52;
+    color: #15541B;
+    
+}
+
+.btn.btn-link:active{
+    transition: .2s ease-in-out;
 }
 
 .everything{
     margin-top: 15px;
-    margin-left: 5px;
-    background-image: url("imgs/register.jpg");
-    background-repeat: no-repeat;
-    background-size: 780px;
-    width: 2200px;
-    height: 850px;
-}
-
-h1{
-    color:#BC8C6F;
+    width: 1300px;
+    height: 1000px;
 }
 
 .navbar{
@@ -66,6 +66,15 @@ h1{
 .alert.alert-primary{
     background-color: #EFE5DC;
     border-color: #EFE5DC;
-    color: #B86F52;
+    color: #A37B73;
+    padding: 5px;
 }
 
+.about{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2{
+    font-size: 120px;
+    color: #839788;
+}
