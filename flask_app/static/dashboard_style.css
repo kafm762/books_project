@@ -12,20 +12,25 @@
     }
 }
 .btn.btn-primary.btn-sm{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
+    background-color: #BAA898;
+    border-color: #BAA898;
+    color:#F8F7F9;
 }
 
-.btn-primary{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
+.btn-primary.my-2{
+    background-color: #839788;
+    border-color: #839788;
+    transition-duration: 0.5s;
 }
-.btn-primary:hover{
-    background-color: #9E7C68;
-    border-color: #9E7C68;
+.btn-primary.my-2:hover{
+    background-color: #BAA898;
+    border-color: #BAA898;
+    transform:scale(1,1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.0,1);
 }
 .navbar{
-    background-color: #CA9E84;
+    background-color: #BAA898 ;
 }
 
 .card.shadow-sm{
@@ -34,6 +39,17 @@
 
 .py-5.text-center.container{
     margin-top: 10px;
-    background-image: url('imgs/books.jpg');
-    color: white;
+    background-image: url('imgs/dashboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F8F7F9;
+}
+
+div.transbox{
+    background: transparent;
+    background-color: #42413C2E;
+}
+
+.card-body{
+    border-color: #A37B73;
 }

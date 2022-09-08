@@ -30,11 +30,13 @@ h1{
 .btn.btn-primary{
     background-color: #D0B8AC;
     border-color: #D0B8AC;
+    transition-duration: 0.5s;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #A37B73;
-    border-color:#A37B73;
+    background-color: #F8F7F9;
+    border-color: #A37B73;
+    color: #A37B73;
 }
 
 .btn.btn-link{
@@ -63,6 +65,6 @@ strong{
 
 .bi.bi-bookmark-heart{
     color:#A37B73;
-    margin-left: 180px;
+    margin-left: 170px;
     margin-bottom: 10px;
 }

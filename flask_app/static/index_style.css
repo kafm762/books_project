@@ -12,6 +12,7 @@ body{
 }
 form{
     margin-left: 50px;
+    margin-top: 20px;
 }
 
 .bi.bi-bookmark-heart{
@@ -29,18 +30,20 @@ h1{
 
 .btn.btn-primary{
     background-color: #BAA898;
-    border-color: #BAA898 ;
+    border-color: #BAA898;
+    transition-duration: 0.5s;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #A37B73;
-    border-color:#A37B73;
+    background-color: #F8F7F9;
+    border-color: #A37B73;
+    color: #A37B73;
 }
 
 .btn.btn-link{
     color: #839788;
     text-decoration: none;
-    transition: .5s ease-in;
+    
 }
 
 .btn.btn-link:hover{
