@@ -22,9 +22,9 @@ def create_comment(book_id):
     if 'user_id' not in session:
         return redirect('/logout')
     if not Comment.validate_comment(request.form):
-        return redirect('/new/comment')
+        return redirect(f'/new/{book_id}/comment')
     data = {
-        "comments": request.form["comment"],
+        "comment": request.form["comment"],
         "book_id": book_id,
         "user_id": session['user_id']
     }

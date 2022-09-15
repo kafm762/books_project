@@ -4,7 +4,7 @@ from flask_app.models import comment
 
 class Comment:
     database_name = 'books'
-    def __init__(self, database_data):
+    def __init__(self,database_data):
         self.id = database_data['id']
         self.comments = database_data['comments']
         self.user_id = database_data['user_id']

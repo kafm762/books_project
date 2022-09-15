@@ -1,10 +1,10 @@
 .navbar{
-    background-color: #CA9E84;
+    background-color: #BAA898;
 }
 
 .btn.btn-secondary.btn-sm{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
+    background-color: #BAA898;
+    border-color: #BAA898;
 }
 
 h2,h4{
@@ -12,21 +12,26 @@ h2,h4{
 }
 
 .btn.btn-primary{
-    background-color: #CB9776;
-    border-color: #CB9776;
+    color: black;
+    background-color:#F8F7F9;
+    border-color: black;
+}
+.card col-lg-6 my-5 bg-light text-dark{
+    float: left;
 }
 
-.card-body{
-    padding: 25px;
+#card-body-1{
+    padding: 35px;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #BC8C6F;
-    border-color:#BC8C6F;
+    background-color: #839788;
+    border-color:#839788;
+    color: #F8F7F9;
 }
 
 .alert.alert-danger{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
+    background-color: #BAA898;
+    border-color: #BAA898;
     color: white;
 }

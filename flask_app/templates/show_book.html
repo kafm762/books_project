@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="navbar navbar-dark shadow-lg" id="section">
+        <div class="navbar navbar-dark shadow-sm" id="section">
             <div class="container">
             <a href="#" class="navbar-brand d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-bookmark-heart" viewBox="2 0 16 16" class="me-2">
@@ -26,27 +26,36 @@
             </div>
         </div>
     </header>
-    
-    <div class="card col-5 mx-auto my-5 bg-light text-dark">
-        <div class="card-body">
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-6 my-5 text-dark">
+        <div class="card-body" id="card-body-1">
             <h2>{{book.title}}</h2>
             <br>
-            <p class="card-text">by: {{book.author}}</p>
+            <p class="card-text">author: {{book.author}}</p>
             <p class="card-text">{{book.genre}}</p>
             <p class="card-text">{{book.description}}</p>
-            
-            <h4>Comments:</h4>
-            {% for comment in comments %}
-                {% if book.user_id == comments.user_id %}
-                    <p class="card-text"><{{user.first_name}}commented: {{comment.comments}}</p>
-                    <p class="card-text"> {{comment.created_at.strftime('%B-%d-%Y-%I-%M')}}</p>
-                {% endif %}
-            {% endfor %}
-            <br>
-            <a href="/new/{{book.id}}/comment" class="btn btn-primary my-2">Add comment</a>
-            <br>
-            <small class="text-muted"></small>
+            <!--<small class="text-muted"></small>-->
         </div>
+    </div>
+
+    <div class="card col-5 my-5 me-2 ms-4 text-dark overflow-auto">
+        <h4 class="card-header">
+            Comments:
+        </h4>
+        <div class="card-body ">
+            {% for comment in comments %}  
+                {% if user.id == comment.user_id %}
+                        <p class="card-text mb-0 mt-3">{{user.first_name}}:
+                {% endif %}        
+                    {{comment.comments}}</p>
+                    <small class="text-muted p-1"> {{comment.created_at.strftime('%B-%d-%Y-%I-%M')}}</small>
+            {% endfor %}
+        <br>
+        <a href="/new/{{book.id}}/comment" class="btn btn-primary my-2">Add comment</a>
+        </div>    
+    </div>
+    </div>
     </div>
 </body>
 </html>

@@ -45,11 +45,9 @@
     color: #F8F7F9;
 }
 
-div.transbox{
-    background: transparent;
-    background-color: #42413C2E;
+#btn:hover{
+    background-color: #839788;
 }
-
-.card-body{
-    border-color: #A37B73;
+div.transbox{
+    background-color: #42413C2E;
 }

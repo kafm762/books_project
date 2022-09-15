@@ -4,30 +4,31 @@
 }
 
 .navbar{
-    background-color: #CA9E84;
+    background-color: #BAA898;
 }
 
 .btn.btn-secondary.btn-sm{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
+    background-color: #BAA898;
+    border-color: #BAA898;
 }
 
 h2{
-    color:#CA9E84;
+    color:#BAA898;
 }
 
 .btn.btn-primary{
-    background-color: #CB9776;
-    border-color: #CB9776;
+    background-color: #839788;
+    border-color: #839788;
 }
 
 .btn.btn.btn-primary:hover{
-    background-color: #BC8C6F;
-    border-color:#BC8C6F;
+    color: #839788;
+    background-color: white;
+    border-color:#839788;
 }
 
 .alert.alert-danger{
-    background-color: #CA9E84;
-    border-color: #CA9E84;
+    background-color: #BAA898;
+    border-color: #BAA898;
     color: white;
 }
